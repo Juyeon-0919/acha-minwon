@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-title" content="acha" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="acha"/>
+  <meta name="keywords" content="acha"/>
+  <link rel="shortcut icon" href="../favicon.svg">
+  <title>아차 민원센터</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/bundle.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+  <header>
+  <div class="header">
+    <div class="inner">
+      <div class="logo"><a href="#"><img src="../img/common/logo.png" alt="아차"></a><span>민원센터</span></div>
+      <div class="menu-tab">
+        <ul class="clearfix">
+          <li class="item active"><a href="#">민원접수</a></li>
+          <li class="item"><a href="#">나의민원</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  $('.menu-tab .item a').on('click',function (){
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active')
+  })
+</script>
+
+
+  <div class="contents">
+
+    <p style="margin: 100px 0;"></p>
+
+    <!-- input -->
+    <input type="text" class="form-control" title="title" placeholder="텍스트 입력 전" />
+    <br/>
+    <input type="text" class="form-control completed" title="title" value="텍스트 입력 완료" />
+    <br/>
+    <input type="text" class="form-control disabled" title="title" placeholder="텍스트 입력 불가" disabled/>
+
+    <p style="margin: 50px 0;"></p>
+
+    <!-- select -->
+    <select class="custom-select" title="select">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <br/>
+    <select class="custom-select completed" title="select">
+      <option selected>선택 완료</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <br/>
+    <select class="custom-select disabled" title="select" disabled>
+      <option selected>선택 불가</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <p style="margin: 50px 0;"></p>
+    <!-- radio -->
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio1" name="radio" class="custom-control-input">
+      <label class="custom-control-label" for="radio1">선택 해제</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio2" name="radio" class="custom-control-input" checked>
+      <label class="custom-control-label" for="radio2">선택</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio3" name="radio" class="custom-control-input" disabled>
+      <label class="custom-control-label" for="radio3">선택 불가</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio4" name="radio2" class="custom-control-input dim" checked>
+      <label class="custom-control-label" for="radio4">선택 해제 불가</label>
+    </div>
+
+    <p style="margin: 50px 0;"></p>
+    <!-- checkbox -->
+
+
+
+
+  </div>
+  <footer>
+  <div class="footer">
+    <div class="inner">
+      <ul class="company-info">
+        <li><span class="tit">본사</span><span class="val">서울특별시 구로구 디지털로31길 14층</span></li>
+        <li><span class="tit">대표이사</span><span class="val">이흥복</span></li>
+        <li><span class="tit">사업자등록번호</span><span class="val">119-81-41677</span></li>
+      </ul>
+      <div class="copyright">Ⓒ 2020 All rights reserved ㈜유비벨록스</div>
+      <ul class="company-link">
+        <li><a href="#">서비스 이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">민원센터</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

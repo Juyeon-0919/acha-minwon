@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap">
+  @@include('../html/include/header.html')
+
+  <div class="contents">
+
+    <p style="margin: 100px 0;"></p>
+
+    <!-- input -->
+    <input type="text" class="form-control" title="title" placeholder="텍스트 입력 전" />
+    <br/>
+    <input type="text" class="form-control completed" title="title" value="텍스트 입력 완료" />
+    <br/>
+    <input type="text" class="form-control disabled" title="title" placeholder="텍스트 입력 불가" disabled/>
+
+    <p style="margin: 50px 0;"></p>
+
+    <!-- select -->
+    <select class="custom-select" title="select">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <br/>
+    <select class="custom-select completed" title="select">
+      <option selected>선택 완료</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <br/>
+    <select class="custom-select disabled" title="select" disabled>
+      <option selected>선택 불가</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <p style="margin: 50px 0;"></p>
+    <!-- radio -->
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio1" name="radio" class="custom-control-input">
+      <label class="custom-control-label" for="radio1">선택 해제</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio2" name="radio" class="custom-control-input" checked>
+      <label class="custom-control-label" for="radio2">선택</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio3" name="radio" class="custom-control-input" disabled>
+      <label class="custom-control-label" for="radio3">선택 불가</label>
+    </div>
+    <br/>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio4" name="radio2" class="custom-control-input dim" checked>
+      <label class="custom-control-label" for="radio4">선택 해제 불가</label>
+    </div>
+
+    <p style="margin: 50px 0;"></p>
+    <!-- checkbox -->
+
+
+
+
+  </div>
+  @@include('../html/include/footer.html')
+</div>
+</body>
+</html>
