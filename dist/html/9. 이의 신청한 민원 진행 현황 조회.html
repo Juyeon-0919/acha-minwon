@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="Referrer" content="origin"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-title" content="acha" />
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="acha"/>
+  <meta name="keywords" content="acha"/>
+  <link rel="shortcut icon" href="../favicon.svg">
+  <title>아차 민원센터</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/bundle.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+  <header>
+  <div class="header">
+    <div class="inner">
+      <div class="logo"><a href="#"><img src="../img/common/logo.png" alt="아차"></a><span>민원센터</span></div>
+      <div class="menu-tab">
+        <ul class="clearfix">
+          <li class="item active"><a href="#">민원접수</a></li>
+          <li class="item"><a href="#">나의민원</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  $('.menu-tab .item a').on('click',function (){
+    $(this).parent().addClass('active');
+    $(this).parent().siblings().removeClass('active')
+  })
+</script>
+
+  <div class="breadcrumb-wrap">
+    <div class="inner">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">민원센터</a></li>
+          <li class="breadcrumb-item"><a href="#">나의민원</a></li>
+          <li class="breadcrumb-item active" aria-current="page">현황</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="contents">
+    <div class="content-title">민원현황</div>
+    <table class="table mt-60 mb-status">
+      <colgroup>
+        <col width="15%">
+        <col width="35%">
+        <col width="15%">
+        <col width="21%">
+        <col width="24%">
+      </colgroup>
+      <thead>
+      <tr>
+        <th>신청번호</th>
+        <th>제목</th>
+        <th>신청일</th>
+        <th>처리현황</th>
+        <th>비고</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="text-small">이의신청</span><span>00000-00001</span></td>
+        <td class="text-left"><span>개인정보 관련 11111</span></td>
+        <td><span>2021-02-23</span></td>
+        <td><span>민원접수(담당자배정)</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span>00000-00001</span></td>
+        <td class="text-left"><span>개인정보 관련 11111</span></td>
+        <td><span>2021-02-23</span></td>
+        <td><span>민원접수(담당자배정)</span></td>
+        <td>취하</td>
+      </tr>
+      <tr>
+        <td><span>00000-00001</span></td>
+        <td class="text-left"><span>개인정보 관련 11111</span></td>
+        <td><span>2021-02-23</span></td>
+        <td><span>민원접수(담당자배정)</span></td>
+        <td><a href="#" class="btn btn-border">자료제출</a></td>
+      </tr>
+      <tr>
+        <td><span>00000-00001</span></td>
+        <td class="text-left"><span>개인정보 관련 글자수 20자이상 개인정보 관련 글자수 20자이상 </span></td>
+        <td><span>2021-02-23</span></td>
+        <td class="completed"><span>답변완료</span></td>
+        <td>취하</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+  <div class="footer">
+    <div class="inner">
+      <ul class="company-info">
+        <li><span class="tit">본사</span><span class="val">서울특별시 구로구 디지털로31길 14층</span></li>
+        <li><span class="tit">대표이사</span><span class="val">이흥복</span></li>
+        <li><span class="tit">사업자등록번호</span><span class="val">119-81-41677</span></li>
+      </ul>
+      <div class="copyright">Ⓒ 2020 All rights reserved ㈜유비벨록스</div>
+      <ul class="company-link">
+        <li><a href="#">서비스 이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">민원센터</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

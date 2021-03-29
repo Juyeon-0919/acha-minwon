@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>아차 - 민원센터</title>
+  <title>아차 민원센터</title>
   <script type="text/javascript" src="../pagelist/js/lib/jquery.js"></script>
   <script type="text/javascript" src="../pagelist/js/lib/handlebars.js"></script>
   <link rel="stylesheet" href="../pagelist/css/style.css">
@@ -131,11 +131,7 @@
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
     .append(template(data.common))
-    // .append(template(data.main))
-    // .append(template(data.product))
-    // .append(template(data.sale))
-    // .append(template(data.statistics))
-    // .append(template(data.info))
+    .append(template(data.minwon))
 </script>
 <script>
   $('.link').on('click', function () {

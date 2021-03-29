@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+<body>
+<div class="wrap">
+  @@include('../html/include/header.html')
+  <div class="breadcrumb-wrap">
+    <div class="inner">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">민원센터</a></li>
+          <li class="breadcrumb-item active" aria-current="page">나의민원</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="contents">
+    <div class="content-title">본인 확인</div>
+    <div class="form mt-60">
+      <table class="vertical-table">
+        <colgroup>
+          <col width="20%">
+          <col width="80%">
+        </colgroup>
+        <tbody>
+        <tr>
+          <td>
+            <div>신청번호</div>
+          </td>
+          <td>
+            <div class="flex">
+              <input type="text" class="form-control" title="title" placeholder="" style="width: 162px;">
+              <span class="at">-</span>
+              <input type="text" class="form-control" title="title" placeholder="" style="width: 162px;">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>휴대전화번호</div>
+          </td>
+          <td>
+            <div class="flex">
+              <input type="text" class="form-control" title="title" placeholder="" style="width: 350px;">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>자동등록방지</div>
+          </td>
+          <td>
+            <div style="width: 350px; height: 97px; background-color: pink;"></div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="btn-wrap">
+      <a href="#" class="btn btn-lg">확인</a>
+    </div>
+  </div>
+  @@include('../html/include/footer.html')
+</div>
+<script>
+  $('.tab .item a').on('click',function () {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+  })
+</script>
+</body>
+</html>

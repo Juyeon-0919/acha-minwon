@@ -2,37 +2,51 @@
 
 .pagination {
   justify-content: center;
-  li {
-    a {
-      border: 0;
+  margin-bottom: 52px;
+
+  .page-item {
+    margin-right: 25px;
+
+    &.first, &.prev, &.next, &.last {
+      transform: translateY(-2px);
     }
+
+    &.first, &.next{
+      margin-right: 10px;
+    }
+
+    &.next {
+      margin-left: -5px;
+      margin-right: 20px;
+    }
+
+    &.last {
+      margin-right: 0;
+    }
+
     .page-link {
       border: 0;
       border-radius: 0;
-      padding: 0 5px;
-      min-width: 30px;
-      height: 30px;
-      line-height: 28px;
+      padding: 0;
+      min-width: auto;
+      height: 22px;
       margin-left: 0;
-      margin-right: 10px;
+      margin-right: 0;
       text-align: center;
-      color: #b9b9b9;
+      color: $text-03;
       background-color: transparent;
 
-      &.page-arrow {
-        border: 1px solid #b8b8b8;
-        border-radius: 0;
-        background-color: #fff;
-        color: #666;
+      &:focus {
+        box-shadow: none;
       }
     }
     &.active {
       .page-link {
-        border: 2px solid #00959c;
-        line-height: 26px;
-        color: #222;
-        font-weight: normal;
-        background: #FFFFFF;
+        border: 0;
+        color: $text-01;
+        font-family: $font-bold;
+        font-weight: bold;
+        background: transparent;
       }
     }
   }

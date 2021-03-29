@@ -131,11 +131,7 @@
   var template = Handlebars.compile(source) //컴파일
   $('.wrap_scroll')
     .append(template(data.common))
-    // .append(template(data.main))
-    // .append(template(data.product))
-    // .append(template(data.sale))
-    // .append(template(data.statistics))
-    // .append(template(data.info))
+    .append(template(data.minwon))
 </script>
 <script>
   $('.link').on('click', function () {
