@@ -95,9 +95,9 @@ data.minwon = {
       page: '11. 민원 신청서 작성'
     },{
       stateClass: 'complete',
-      url: '12. 민원 신청서 작성',
+      url: '12. 민원 이의 신청서 작성',
       category: '',
-      page: '12. 민원 신청서 작성'
+      page: '12. 민원 이의 신청서 작성'
     }
   ]
 }

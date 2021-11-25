@@ -452,6 +452,15 @@
         > div.checkbox-wrap {
           padding: 7.5px 0;
 
+          .check-box {
+            span {
+              font-size: 16px;
+            }
+            &:first-child {
+              margin-right: 30px;
+            }
+          }
+
           .custom-checkbox {
             display: inline-block;
 

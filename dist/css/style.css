@@ -8843,6 +8843,63 @@ template {
         background-color: #f5f6f8; }
         .vertical-table tr td:first-child .text {
           font-family: "Noto Sans CJK KR Medium"; }
+    .vertical-table tr .box-wrap {
+      overflow: hidden; }
+      .vertical-table tr .box-wrap .prevent-automatic-registration {
+        float: left;
+        width: 180px;
+        height: 70px;
+        border: solid 1px #e2e3e6; }
+        .vertical-table tr .box-wrap .prevent-automatic-registration img {
+          width: 100%;
+          height: 100%; }
+      .vertical-table tr .box-wrap .btn-square-wrap {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center; }
+        .vertical-table tr .box-wrap .btn-square-wrap .btn-square {
+          display: flex;
+          width: 120px;
+          height: 35px;
+          border: solid 1px #e2e3e6;
+          justify-content: left;
+          align-items: center;
+          padding-left: 12px;
+          border-left: 0 !important; }
+          .vertical-table tr .box-wrap .btn-square-wrap .btn-square > i.ic-textcheck-sound {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/common/ic-textcheck-sound.svg);
+            background-size: cover; }
+          .vertical-table tr .box-wrap .btn-square-wrap .btn-square > i.ic-textcheck-refresh {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/common/ic-textcheck-refresh.svg);
+            background-size: cover; }
+          .vertical-table tr .box-wrap .btn-square-wrap .btn-square > span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 13px;
+            font-family: "Noto Sans CJK KR Medium";
+            font-weight: 500;
+            letter-spacing: -.33px; }
+          .vertical-table tr .box-wrap .btn-square-wrap .btn-square:first-child {
+            border-bottom: 0; }
+    .vertical-table tr .input-box {
+      margin-top: 7px; }
+      .vertical-table tr .input-box .form-control {
+        width: 350px !important; }
+    .vertical-table tr .prevent-automatic-registration-desc {
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -0.38px;
+      color: #737183;
+      margin-top: 7px;
+      padding-bottom: 8px; }
 
 .custom-checkbox {
   position: relative;
@@ -8916,7 +8973,7 @@ template {
   display: inline-block;
   height: 25px;
   line-height: 25px;
-  font-size: 13px;
+  font-size: 18px;
   font-family: var(--font2);
   font-weight: 500;
   letter-spacing: -0.65px;
@@ -9431,6 +9488,9 @@ template {
 .border-bottom {
   border-bottom: 1px solid #e3e4e8 !important; }
 
+label {
+  margin: 0; }
+
 .top-banner {
   width: 100%;
   height: 190px;
@@ -9742,6 +9802,10 @@ template {
       padding: 7.5px 0; }
     .form .vertical-table tr td > div.checkbox-wrap {
       padding: 7.5px 0; }
+      .form .vertical-table tr td > div.checkbox-wrap .check-box span {
+        font-size: 16px; }
+      .form .vertical-table tr td > div.checkbox-wrap .check-box:first-child {
+        margin-right: 30px; }
       .form .vertical-table tr td > div.checkbox-wrap .custom-checkbox {
         display: inline-block; }
         .form .vertical-table tr td > div.checkbox-wrap .custom-checkbox:first-child {
