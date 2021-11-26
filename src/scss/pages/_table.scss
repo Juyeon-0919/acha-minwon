@@ -2,9 +2,12 @@
 
 .table {
   width: 100%;
+
   &.mb-status {
-    margin-bottom: 238px;
+    margin-bottom: 30px;
+    margin-top: 41px;
   }
+
   thead {
     tr {
       th {
@@ -19,8 +22,14 @@
       }
     }
   }
+
   tbody {
     border-bottom: 1px solid $text-04;
+
+    .text-overflow {
+      max-width: 577px !important;
+    }
+
     tr {
       td {
         position: relative;
@@ -36,7 +45,8 @@
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
+          min-width: 122px;
         }
 
         .text-small {
@@ -65,6 +75,17 @@
           color: #6291d0;
         }
       }
+
+      &.empty {
+        height: 361px;
+
+        td {
+          font-size: 16px;
+          letter-spacing: -0.4px;
+          text-align: center;
+          color: $text-02;
+        }
+      }
     }
   }
 }
@@ -73,17 +94,22 @@
   width: 100%;
   border-top: 1px solid $text-01;
   border-bottom: 1px solid $text-04;
+
   tr {
     border-bottom: 1px solid #e3e4e8;
+
     &:last-child {
       border-bottom: 0;
     }
+
     &.fixed-height {
       height: 150px;
+
       td {
         vertical-align: top;
       }
     }
+
     td {
       height: 54px;
       padding-left: 24px;
@@ -106,6 +132,7 @@
 
       &:first-child {
         background-color: #f5f6f8;
+
         .text {
           font-family: $font-medium;
         }
@@ -178,6 +205,7 @@
 
     .input-box {
       margin-top: 7px;
+
       .form-control {
         width: 350px !important;
       }
@@ -192,12 +220,8 @@
       padding-bottom: 8px;
     }
   }
+
+  + .text-normal.mt-0 {
+    margin-top: 15px !important;
+  }
 }
-
-
-
-
-
-
-
-

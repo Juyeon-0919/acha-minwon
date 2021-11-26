@@ -20,84 +20,99 @@ data.minwon = {
   list: [
     {
       stateClass: 'complete',
-      url: '1. 민원센터 메인',
+      url: '민원센터_1.홈(민원센터_메인)',
       category: '',
-      page: '1. 민원센터 메인'
+      page: '민원센터_1.홈(민원센터_메인)'
     },{
       stateClass: 'complete',
-      url: '2. FAQ',
+      url: '민원센터_2-1.민원신청(FAQ)',
       category: '',
-      page: '2. FAQ'
+      page: '민원센터_2-1.민원신청(FAQ)'
     },{
       stateClass: 'complete',
-      url: '3. 개인정보 수집동의',
+      url: '민원센터_3-1.민원신청(개인정보_수집동의)',
       category: '',
-      page: '3. 개인정보 수집동의'
+      page: '민원센터_3-1.민원신청(개인정보_수집동의)'
     },{
       stateClass: 'complete',
-      url: '4. 민원 신청서 작성',
+      url: '민원센터_4-1.민원신청(민원_신청서_작성)',
       category: '',
-      page: '4. 민원 신청서 작성'
+      page: '민원센터_4-1.민원신청(민원_신청서_작성)'
     },{
       stateClass: 'complete',
-      url: '5. 민원 신청서 완료',
+      url: '민원센터_4-2.민원신청(민원_신청서_작성_완료)',
       category: '',
-      page: '5. 민원 신청서 완료'
+      page: '민원센터_4-2.민원신청(민원_신청서_작성_완료)'
     },{
       stateClass: 'complete',
-      url: '6. 나의민원 진입',
+      url: '민원센터_5.나의민원(본인_확인)',
       category: '',
-      page: '6. 나의민원 진입'
+      page: '민원센터_5.나의민원(본인_확인)'
     },{
       stateClass: 'complete',
-      url: '7. 신청한 민원 진행 현황 조회',
+      url: '민원센터_6-1.나의민원(민원현황)',
       category: '',
-      page: '7. 신청한 민원 진행 현황 조회'
+      page: '민원센터_6-1.나의민원(민원현황)'
     },{
       stateClass: 'complete',
-      url: '8-1. 민원인 추가 보완요청',
+      url: '민원센터_7-1.나의민원(민원상세)_접수대기',
       category: '',
-      page: '8-1. 민원인 추가 보완요청'
+      page: '민원센터_7-1.나의민원(민원상세)_접수대기'
     },{
       stateClass: 'complete',
-      url: '8-2. 민원인 추가 보완요청 (제출완료)',
+      url: '민원센터_7-2.나의민원(민원상세)_취하팝업',
       category: '',
-      page: '8-2. 민원인 추가 보완요청 (제출완료)'
+      page: '민원센터_7-2.나의민원(민원상세)_취하팝업'
     },{
       stateClass: 'complete',
-      url: '9. 이의 신청한 민원 진행 현황 조회',
+      url: '민원센터_7-3.나의민원(민원상세)_취하완료',
       category: '',
-      page: '9. 이의 신청한 민원 진행 현황 조회'
+      page: '민원센터_7-3.나의민원(민원상세)_취하완료'
     },{
       stateClass: 'complete',
-      url: '10. 민원신청, 민원접수 (취하팝업)',
+      url: '민원센터_7-4.나의민원(민원상세)_담당자_배정',
       category: '',
-      page: '10. 민원신청, 민원접수 (취하팝업)'
+      page: '민원센터_7-4.나의민원(민원상세)_담당자_배정'
     },{
       stateClass: 'complete',
-      url: '10. 민원신청 상태인 경우 상세 화면',
+      url: '민원센터_7-5.나의민원(민원상세)_답변_완료',
       category: '',
-      page: '10. 민원신청 상태인 경우 상세 화면'
+      page: '민원센터_7-5.나의민원(민원상세)_답변_완료'
     },{
       stateClass: 'complete',
-      url: '10. 취하완료',
+      url: '민원센터_7-6.나의민원(민원상세)_종결',
       category: '',
-      page: '10. 취하완료'
+      page: '민원센터_7-6.나의민원(민원상세)_종결'
     },{
       stateClass: 'complete',
-      url: '11. 민원 신청서 작성(팝업)',
+      url: '민원센터_8-1.보완자료(보완자료_제출_안내_팝업)',
       category: '',
-      page: '11. 민원 신청서 작성(팝업)'
+      page: '민원센터_8-1.보완자료(보완자료_제출_안내_팝업)'
     },{
       stateClass: 'complete',
-      url: '11. 민원 신청서 작성',
+      url: '민원센터_8-2.보완자료(보완자료_제출)',
       category: '',
-      page: '11. 민원 신청서 작성'
+      page: '민원센터_8-2.보완자료(보완자료_제출)'
     },{
       stateClass: 'complete',
-      url: '12. 민원 이의 신청서 작성',
+      url: '민원센터_8-3.보완자료(제출_완료)',
       category: '',
-      page: '12. 민원 이의 신청서 작성'
+      page: '민원센터_8-3.보완자료(제출_완료)'
+    },{
+      stateClass: 'complete',
+      url: '민원센터_8-4.보완자료(보완자료_상세_팝업)',
+      category: '',
+      page: '민원센터_8-4.보완자료(보완자료_상세_팝업)'
+    },{
+      stateClass: 'complete',
+      url: '민원센터_9-1.민원서식(민원서식)',
+      category: '',
+      page: '민원센터_9-1.민원서식(민원서식)'
+    },{
+      stateClass: 'complete',
+      url: '민원센터_9-4.민원서식(게시판_상세)',
+      category: '',
+      page: '민원센터_9-4.민원서식(게시판_상세)'
     }
   ]
 }

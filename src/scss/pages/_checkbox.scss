@@ -93,7 +93,7 @@
   height: 25px;
   line-height: 25px;
   font-size: 18px;
-  font-family: var(--font2);
+  font-family: $font-medium;
   font-weight: 500;
   letter-spacing: -0.65px;
   -webkit-user-select: none;
@@ -146,8 +146,8 @@
   height: 22px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid var(--primary);
-  border-bottom: 2px solid var(--primary);
+  border-right: 2px solid $blurple;
+  border-bottom: 2px solid $blurple;
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
   -webkit-backface-visibility: hidden;
@@ -169,7 +169,7 @@
   height: 22px;
   border-top: none;
   border-left: none;
-  border-right: 2px solid var(--primary);
+  border-right: 2px solid $blurple;
   border-bottom: none;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -239,9 +239,9 @@
   top: 2px;
   width: 22px;
   height: 22px;
-  border: 2px solid var(--primary);
+  border: 2px solid $blurple;
   border-radius: 50%;
-  background-color: var(--primary);
+  background-color: $blurple;
   z-index: 0;
 }
 
@@ -253,8 +253,8 @@
 
 [type="checkbox"].filled-in.tabbed:checked:focus + span:not(.lever):after {
   border-radius: 2px;
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: $blurple;
+  border-color: $blurple;
 }
 
 [type="checkbox"].filled-in:disabled:not(:checked) + span:not(.lever):before {
@@ -273,8 +273,8 @@
 }
 
 [type="checkbox"].filled-in:disabled:checked + span:not(.lever):after {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: $blurple;
+  border: 1px solid $blurple;
   opacity: .6;
 }
 

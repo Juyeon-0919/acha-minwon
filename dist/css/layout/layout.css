@@ -9,7 +9,9 @@
 
 .contents {
   width: 850px;
-  margin: 0 auto; }
+  min-height: 670px;
+  margin: 0 auto;
+  padding-bottom: 120px; }
 
 .header {
   width: 100%;
@@ -101,12 +103,13 @@
           font-size: 12px;
           line-height: 24px;
           text-align: left;
-          color: #737183; }
+          color: #afaeb8;
+          margin-right: 5px; }
         .footer .inner .company-info li .val {
           font-size: 12px;
           line-height: 24px;
           text-align: left;
-          color: #afaeb8; }
+          color: #737183; }
     .footer .inner .copyright {
       font-size: 12px;
       line-height: 18px;

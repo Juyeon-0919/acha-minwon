@@ -13,7 +13,9 @@
 
 .contents {
   width: 850px;
+  min-height: 670px;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 
 .header {
@@ -116,6 +118,7 @@
       padding-top: 36px;
       margin-bottom: 6px;
       overflow: hidden;
+
       li {
         position: relative;
         float: left;
@@ -144,14 +147,15 @@
           font-size: 12px;
           line-height: 24px;
           text-align: left;
-          color: $text-02;
+          color: $text-04;
+          margin-right: 5px;
         }
 
         .val {
           font-size: 12px;
           line-height: 24px;
           text-align: left;
-          color: $text-04;
+          color: $text-02;
         }
       }
     }
@@ -195,6 +199,7 @@
           font-weight: bold;
           line-height: 18px;
           color: $text-03;
+
           &:hover {
             text-decoration: underline;
           }

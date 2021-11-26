@@ -8486,7 +8486,9 @@ template {
 
 .contents {
   width: 850px;
-  margin: 0 auto; }
+  min-height: 670px;
+  margin: 0 auto;
+  padding-bottom: 120px; }
 
 .header {
   width: 100%;
@@ -8578,12 +8580,13 @@ template {
           font-size: 12px;
           line-height: 24px;
           text-align: left;
-          color: #737183; }
+          color: #afaeb8;
+          margin-right: 5px; }
         .footer .inner .company-info li .val {
           font-size: 12px;
           line-height: 24px;
           text-align: left;
-          color: #afaeb8; }
+          color: #737183; }
     .footer .inner .copyright {
       font-size: 12px;
       line-height: 18px;
@@ -8686,8 +8689,7 @@ template {
     background-image: url(../img/common/ico-alram-06.png); }
 
 .pagination {
-  justify-content: center;
-  margin-bottom: 52px; }
+  justify-content: center; }
   .pagination .page-item {
     margin-right: 25px; }
     .pagination .page-item.first, .pagination .page-item.prev, .pagination .page-item.next, .pagination .page-item.last {
@@ -8742,6 +8744,7 @@ template {
     min-width: 180px;
     height: 60px;
     line-height: 58px;
+    font-size: 17px;
     border-radius: 6px; }
   .btn.btn-sm, .btn-group-sm > .btn {
     width: 86px;
@@ -8767,7 +8770,8 @@ template {
 .table {
   width: 100%; }
   .table.mb-status {
-    margin-bottom: 238px; }
+    margin-bottom: 30px;
+    margin-top: 41px; }
   .table thead tr th {
     text-align: center;
     background: #f7f8fc;
@@ -8779,6 +8783,8 @@ template {
     letter-spacing: -.4px; }
   .table tbody {
     border-bottom: 1px solid #afaeb8; }
+    .table tbody .text-overflow {
+      max-width: 577px !important; }
     .table tbody tr td {
       position: relative;
       text-align: center;
@@ -8792,7 +8798,8 @@ template {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); }
+        transform: translate(-50%, -50%);
+        min-width: 122px; }
       .table tbody tr td .text-small {
         position: absolute;
         font-family: "Noto Sans CJK KR Medium";
@@ -8813,6 +8820,13 @@ template {
         max-width: 215px; }
       .table tbody tr td.completed {
         color: #6291d0; }
+    .table tbody tr.empty {
+      height: 361px; }
+      .table tbody tr.empty td {
+        font-size: 16px;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #737183; }
 
 .vertical-table {
   width: 100%;
@@ -8900,6 +8914,8 @@ template {
       color: #737183;
       margin-top: 7px;
       padding-bottom: 8px; }
+  .vertical-table + .text-normal.mt-0 {
+    margin-top: 15px !important; }
 
 .custom-checkbox {
   position: relative;
@@ -8974,7 +8990,7 @@ template {
   height: 25px;
   line-height: 25px;
   font-size: 18px;
-  font-family: var(--font2);
+  font-family: "Noto Sans CJK KR Medium";
   font-weight: 500;
   letter-spacing: -0.65px;
   -webkit-user-select: none;
@@ -9022,8 +9038,8 @@ template {
   height: 22px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid var(--primary);
-  border-bottom: 2px solid var(--primary);
+  border-right: 2px solid #6839d3;
+  border-bottom: 2px solid #6839d3;
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
   -webkit-backface-visibility: hidden;
@@ -9043,7 +9059,7 @@ template {
   height: 22px;
   border-top: none;
   border-left: none;
-  border-right: 2px solid var(--primary);
+  border-right: 2px solid #6839d3;
   border-bottom: none;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -9106,9 +9122,9 @@ template {
   top: 2px;
   width: 22px;
   height: 22px;
-  border: 2px solid var(--primary);
+  border: 2px solid #6839d3;
   border-radius: 50%;
-  background-color: var(--primary);
+  background-color: #6839d3;
   z-index: 0; }
 
 [type="checkbox"].filled-in.tabbed:focus + span:not(.lever):after {
@@ -9118,8 +9134,8 @@ template {
 
 [type="checkbox"].filled-in.tabbed:checked:focus + span:not(.lever):after {
   border-radius: 2px;
-  background-color: var(--primary);
-  border-color: var(--primary); }
+  background-color: #6839d3;
+  border-color: #6839d3; }
 
 [type="checkbox"].filled-in:disabled:not(:checked) + span:not(.lever):before {
   background-color: transparent; }
@@ -9134,8 +9150,8 @@ template {
   border-bottom: 2px solid #e2e3e6; }
 
 [type="checkbox"].filled-in:disabled:checked + span:not(.lever):after {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: #6839d3;
+  border: 1px solid #6839d3;
   opacity: .6; }
 
 [type="checkbox"].filled-in.dim:checked + span:not(.lever):after {
@@ -9217,6 +9233,127 @@ template {
     .custom-select.disabled:focus, .custom-select.disabled:active {
       border-color: #e2e3e6;
       background: #f5f6f8 url(../img/common/ico-input-arrow-open.png) no-repeat right 0.75rem center/18px 18px; }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none; }
+
+.calendar-box {
+  padding: 36px 0;
+  border-radius: 6px;
+  border: solid 1px #e3e4e8;
+  margin-top: 60px; }
+  .calendar-box > .desc {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.38px;
+    text-align: left;
+    color: #737183;
+    margin-top: 16px;
+    padding-left: 140px; }
+
+.calendar-form {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .calendar-form > label {
+    float: left;
+    font-family: "Noto Sans CJK KR Medium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #37354e;
+    margin-right: 25px; }
+  .calendar-form > span {
+    float: left;
+    font-family: "Noto Sans CJK KR Medium";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #37354e;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .calendar-form .custom-select {
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 16px; }
+  .calendar-form .input-calendar {
+    float: left;
+    position: relative;
+    width: 170px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #e2e3e6;
+    color: #9b9aa6;
+    overflow: hidden;
+    background-color: #fff; }
+    .calendar-form .input-calendar.fix-data {
+      border: 0; }
+      .calendar-form .input-calendar.fix-data input, .calendar-form .input-calendar.fix-data input[readonly] {
+        color: #37354e;
+        padding: 10px 11px 10px 30px; }
+      .calendar-form .input-calendar.fix-data label {
+        display: none; }
+      .calendar-form .input-calendar.fix-data input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none; }
+    .calendar-form .input-calendar label {
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/common/ico-input-calendar@2x.png);
+      background-size: cover;
+      right: 15px;
+      top: 10px; }
+    .calendar-form .input-calendar input[type="date"]::-webkit-inner-spin-button,
+    .calendar-form .input-calendar input[type="date"]::-webkit-clear-button {
+      display: none; }
+    .calendar-form .input-calendar input[type="date"]::-webkit-calendar-picker-indicator {
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/common/ico-input-calendar@2x.png);
+      background-size: cover;
+      right: 12px;
+      top: 8px; }
+    .calendar-form .input-calendar input {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 10px 12px 11px;
+      font-family: "Noto Sans CJK KR Medium";
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 38px;
+      text-align: left;
+      color: #37354e;
+      border-radius: 4px;
+      background-color: #fff;
+      letter-spacing: -1px; }
+      .calendar-form .input-calendar input.default {
+        font-family: "Noto Sans CJK KR Regular";
+        font-weight: normal;
+        color: #9b9aa6; }
+      .calendar-form .input-calendar input::placeholder {
+        font-family: "Noto Sans CJK KR Regular";
+        font-weight: 400;
+        color: #9b9aa6; }
+      .calendar-form .input-calendar input:focus {
+        outline: none; }
+  .calendar-form .icon {
+    float: left;
+    width: 37px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #37354e; }
 
 .step ul {
   display: flex;
@@ -9407,7 +9544,7 @@ template {
   margin-right: 30px; }
 
 .mb-30 {
-  margin-bottom: 30px; }
+  margin-bottom: 30px !important; }
 
 .text-link {
   color: #6291d0;
@@ -9417,7 +9554,7 @@ template {
 
 .bg-purple {
   width: 100%;
-  padding-bottom: 110px;
+  padding-bottom: 120px;
   background-color: #fafbfd; }
 
 .text-md {
@@ -9442,8 +9579,7 @@ template {
   margin-bottom: 40px; }
 
 .btn-wrap {
-  text-align: center;
-  margin-bottom: 120px; }
+  text-align: center; }
 
 .breadcrumb-wrap {
   width: 100%;
@@ -9456,10 +9592,13 @@ template {
     margin: 0 auto; }
     .breadcrumb-wrap .inner .breadcrumb {
       background-color: #fff;
-      line-height: 54px;
-      padding: 0; }
+      line-height: 59px;
+      height: 100%;
+      padding: 0;
+      margin-bottom: 0; }
       .breadcrumb-wrap .inner .breadcrumb .breadcrumb-item {
-        color: #37354e; }
+        color: #37354e;
+        height: 100%; }
         .breadcrumb-wrap .inner .breadcrumb .breadcrumb-item.active {
           color: #37354e; }
           .breadcrumb-wrap .inner .breadcrumb .breadcrumb-item.active a {
@@ -9469,7 +9608,8 @@ template {
         .breadcrumb-wrap .inner .breadcrumb .breadcrumb-item a {
           font-size: 16px;
           letter-spacing: -.4px;
-          color: #37354e; }
+          color: #37354e;
+          height: 100%; }
         .breadcrumb-wrap .inner .breadcrumb .breadcrumb-item + .breadcrumb-item {
           position: relative;
           padding-left: 44px; }
@@ -9514,6 +9654,10 @@ label {
         width: 100%;
         height: 100%; }
 
+.main-wrap {
+  width: 850px;
+  margin: 0 auto; }
+
 .main {
   padding-top: 110px; }
   .main .table-wrap {
@@ -9522,11 +9666,18 @@ label {
       margin-left: 23px; }
   .main .main-civilcomplaint-process-img {
     width: 850px;
-    height: 278px;
+    height: auto;
     margin: 0 auto 50px; }
     .main .main-civilcomplaint-process-img img {
       width: 100%;
       height: 100%; }
+
+.search-area-box {
+  margin-bottom: 40px;
+  margin-top: 60px;
+  border-radius: 6px;
+  border: solid 1px #e3e4e8;
+  padding: 36px 0; }
 
 .search-area {
   display: flex;
@@ -9534,15 +9685,19 @@ label {
   height: 40px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 60px; }
+  justify-content: center; }
   .search-area > .icon {
     margin-right: 6px; }
   .search-area .tit {
-    margin-right: 15px; }
+    margin-right: 15px;
+    font-family: "Noto Sans CJK KR Medium"; }
+  .search-area .custom-select {
+    width: 170px;
+    margin-right: 10px;
+    font-size: 16px; }
   .search-area .search-form-control {
     position: relative;
-    width: 600px; }
+    width: 475px; }
     .search-area .search-form-control .form-control {
       width: 100%;
       font-size: 16px; }
@@ -9573,6 +9728,9 @@ label {
         letter-spacing: -.4px;
         color: #37354e;
         margin-bottom: 0; }
+        .accordion.faq > .card > .card-header .card-title .category {
+          font-family: "Noto Sans CJK KR Medium";
+          margin-right: 10px; }
         .accordion.faq > .card > .card-header .card-title::before {
           content: '';
           position: absolute;
@@ -9663,17 +9821,20 @@ label {
             vertical-align: initial;
             background-color: #f7f8fc; }
             .accordion.detail > .card .card-body .vertical-table tr td:first-child .tit, .accordion.detail > .card .card-body .vertical-table tr td:nth-child(3) .tit {
-              line-height: 22px; }
+              line-height: 22px;
+              font-family: "Noto Sans CJK KR Medium"; }
           .accordion.detail > .card .card-body .vertical-table tr td {
             vertical-align: initial !important;
             padding: 15px 0 15px 20px !important; }
             .accordion.detail > .card .card-body .vertical-table tr td .text {
               line-height: 22px; }
+            .accordion.detail > .card .card-body .vertical-table tr td.with-btn {
+              padding: 7px 20px !important; }
           .accordion.detail > .card .card-body .vertical-table tr.fixed-height {
             height: 120px; }
         .accordion.detail > .card .card-body .text-box {
           border-top: 1px solid #e3e4e8;
-          padding: 30px;
+          padding: 30px 20px;
           font-size: 16px;
           line-height: 28px;
           letter-spacing: -.4px; }
@@ -9685,6 +9846,8 @@ label {
             padding: 0 15px; }
     .accordion.detail > .card:not(:last-of-type) {
       border-bottom: 1px solid #e3e4e8; }
+  .accordion + .pagination {
+    margin-bottom: 50px; }
 
 .purple-box {
   width: 100%;
@@ -9699,7 +9862,7 @@ label {
       position: relative;
       display: block;
       padding-left: 11px;
-      line-height: 22px; }
+      line-height: 26px; }
       .purple-box .text > span::before {
         content: '·';
         position: absolute;
@@ -9716,7 +9879,39 @@ label {
   border-bottom: 1px solid #afaeb8;
   margin-bottom: 40px;
   margin-top: 61px; }
+  .box-table .file-box {
+    padding: 0 8px;
+    border: solid 1px #e3e4e8;
+    margin-bottom: 30px;
+    margin-top: -10px; }
+    .box-table .file-box ul li {
+      display: flex;
+      width: 100%;
+      padding: 8px 0;
+      border-bottom: 1px solid #e3e4e8; }
+      .box-table .file-box ul li a {
+        display: flex;
+        width: 100%;
+        align-items: center; }
+        .box-table .file-box ul li a:hover span {
+          text-decoration: underline; }
+      .box-table .file-box ul li .btn-file-download {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/common/btn-file-download@2x.png);
+        background-size: cover;
+        margin-right: 6px; }
+      .box-table .file-box ul li span {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+        text-align: left;
+        color: #6291d0; }
+      .box-table .file-box ul li:last-child {
+        border-bottom: 0; }
   .box-table .title-area {
+    position: relative;
     display: flex;
     align-items: center;
     font-family: "Noto Sans CJK KR Medium";
@@ -9727,11 +9922,21 @@ label {
     background-color: #f7f8fc;
     border-bottom: 1px solid #e3e4e8;
     padding-left: 20px; }
+    .box-table .title-area .tit {
+      width: calc(100% - 100px - 20px);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    .box-table .title-area .date {
+      position: absolute;
+      right: 20px;
+      top: 15px; }
   .box-table .inner {
-    height: 253px;
-    padding: 30px 28px; }
+    min-height: 360px;
+    padding: 30px 20px; }
     .box-table .inner.scroll {
-      overflow-y: scroll; }
+      overflow-y: scroll;
+      max-height: 360px; }
     .box-table .inner .text {
       font-size: 16px;
       line-height: 27px;
@@ -9743,12 +9948,20 @@ label {
         font-size: 20px;
         font-family: "Noto Sans CJK KR Bold";
         color: #6839d3; }
+    .box-table .inner.sm-inner {
+      min-height: 251px; }
 
 .checkbox-area {
   text-align: center;
   margin-bottom: 40px; }
   .checkbox-area .custom-control-label {
     font-size: 18px; }
+
+.check-desc {
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 40px; }
 
 .step-wrap {
   margin-top: 60px;
@@ -9782,7 +9995,8 @@ label {
     .form .vertical-table tr td:first-child {
       vertical-align: top;
       background-color: #f7f8fc;
-      padding-top: 15px; }
+      padding-top: 15px;
+      font-family: "Noto Sans CJK KR Medium"; }
     .form .vertical-table tr td > div.text {
       line-height: 39px; }
     .form .vertical-table tr td > div.required {
@@ -9827,29 +10041,70 @@ label {
       font-size: 16px;
       height: 300px;
       resize: none; }
+    .form .vertical-table tr td .text-limit {
+      font-size: 12px;
+      font-stretch: normal;
+      line-height: 18px;
+      letter-spacing: -0.3px;
+      text-align: right;
+      color: #afaeb8; }
+      .form .vertical-table tr td .text-limit em {
+        font-style: normal;
+        color: #37354e; }
     .form .vertical-table tr td .custom-select {
       width: 170px;
       display: inline-block;
       margin-left: 10px; }
-    .form .vertical-table tr td .add-file-wrap .file-link {
-      display: inline-block;
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: -.4px;
-      color: #6291d0; }
-    .form .vertical-table tr td .add-file-wrap .btn-delete {
-      display: inline-block;
-      margin-left: 10px; }
+    .form .vertical-table tr td .file-desc {
+      display: block;
+      color: #9b9aa6; }
     .form .vertical-table tr td .btn-add {
       position: absolute;
       right: 20px;
-      top: 7px; }
+      top: 7px;
+      font-size: 16px; }
+
+.form .table-desc {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.38px;
+  text-align: left;
+  color: #737183;
+  margin-top: -25px;
+  margin-bottom: 40px; }
 
 .form .text-normal {
   font-size: 15px;
   color: #737183;
   margin-top: -25px;
   margin-bottom: 40px; }
+
+.form .file-box {
+  padding: 17px 20px 14px;
+  border-bottom: 1px solid #afaeb8;
+  margin-bottom: 15px; }
+  .form .file-box .attachment {
+    font-family: "Noto Sans CJK KR Medium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: var(--text-01);
+    margin-bottom: 15px; }
+  .form .file-box .add-file-wrap li {
+    margin-bottom: 17px; }
+    .form .file-box .add-file-wrap li:last-child {
+      margin-bottom: 0; }
+  .form .file-box .add-file-wrap .file-link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -.4px;
+    color: #6291d0; }
+  .form .file-box .add-file-wrap .btn-delete {
+    display: inline-block;
+    margin-left: 10px; }
 
 .at {
   margin: 0 10px; }
@@ -9888,6 +10143,67 @@ label {
           right: -27px;
           top: 3px; }
 
+.terms-of-service .title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+  margin-bottom: 30px; }
+
+.terms-of-service .title-sm {
+  font-family: "Noto Sans CJK KR Medium";
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.38px;
+  margin-bottom: 11px; }
+
+.terms-of-service .content {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.35px;
+  margin-bottom: 30px; }
+  .terms-of-service .content:last-child {
+    margin-bottom: 0; }
+
+.terms-of-service .t-table .table {
+  margin-bottom: 0; }
+  .terms-of-service .t-table .table tbody tr td {
+    padding: 15px 15px 14px;
+    line-height: 19px;
+    font-size: 13px;
+    font-family: "Noto Sans CJK KR Regular";
+    color: #737183;
+    vertical-align: top;
+    text-align: left; }
+    .terms-of-service .t-table .table tbody tr td.font-medium {
+      font-family: "Noto Sans CJK KR Medium";
+      background-color: #f5f6f8;
+      border-right: 1px solid #e3e4e8; }
+  .terms-of-service .t-table .table tbody.font-small tr td {
+    font-size: 11px; }
+
+.phone-authorization .img {
+  width: 140px;
+  height: auto;
+  margin: 60px auto 40px; }
+  .phone-authorization .img img {
+    width: 100%;
+    height: auto; }
+
+.phone-authorization .desc {
+  text-align: center;
+  font-family: "Noto Sans CJK KR Medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.45px;
+  margin-bottom: 40px; }
+
+.phone-authorization .btn-wrap {
+  margin-bottom: 207px; }
+
+/* 이용약관 */
+/* pc */
 .modal .modal-dialog {
   max-width: 700px;
   min-width: 700px; }
@@ -9931,12 +10247,29 @@ label {
       .modal .modal-dialog .modal-content .modal-body textarea.form-control {
         height: 266px; }
       .modal .modal-dialog .modal-content .modal-body .vertical-table tr.fixed-height {
-        height: 200px; }
+        height: 120px; }
       .modal .modal-dialog .modal-content .modal-body .vertical-table .scroll {
+        padding: 15px 20px;
         overflow-y: scroll; }
         .modal .modal-dialog .modal-content .modal-body .vertical-table .scroll .text {
-          height: 170px;
+          height: 106px;
           line-height: 24px; }
+      .modal .modal-dialog .modal-content .modal-body .vertical-table.vertical-table-file tbody tr:first-child td {
+        height: 120px;
+        vertical-align: top; }
+      .modal .modal-dialog .modal-content .modal-body .vertical-table.vertical-table-file tbody tr:nth-child(2) td:first-child {
+        background-color: #f7f8fc;
+        font-family: "Noto Sans CJK KR Medium";
+        vertical-align: top;
+        padding: 16px 20px;
+        color: #37354e; }
+      .modal .modal-dialog .modal-content .modal-body .vertical-table.vertical-table-file tbody tr:nth-child(2) td, .modal .modal-dialog .modal-content .modal-body .vertical-table.vertical-table-file tbody tr:nth-child(3) td {
+        height: 54px;
+        vertical-align: middle;
+        padding: 7px 20px;
+        background: #fff;
+        font-family: "Noto Sans CJK KR Regular";
+        color: #6291d0; }
       .modal .modal-dialog .modal-content .modal-body .box-table {
         margin-top: 0;
         margin-bottom: 0;
@@ -9961,3 +10294,34 @@ label {
           margin: 0; }
         .modal .modal-dialog .modal-content .modal-footer .btn:last-child {
           margin: 0; }
+  .modal .modal-dialog.modal-sm {
+    max-width: 600px;
+    min-width: 600px; }
+    .modal .modal-dialog.modal-sm .modal-content {
+      width: 600px; }
+      .modal .modal-dialog.modal-sm .modal-content .text {
+        font-family: "Noto Sans CJK KR Medium";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: -0.45px;
+        text-align: center;
+        color: #37354e;
+        margin-bottom: 20px;
+        margin-top: 20px; }
+
+.badge {
+  display: inline-block;
+  min-width: 66px;
+  height: 28px;
+  font-family: "Noto Sans CJK KR Medium";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.33px;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 50px;
+  color: #6839d3;
+  border: solid 1px #6839d3;
+  margin-right: 8px; }
